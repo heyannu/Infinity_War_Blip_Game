@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(19, 18, 18, 0.82)
+}
+
+.flex-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 3vh;
+}
+
+.img{
+  margin:2vh;
+  width: 40vh;
+  height: 40vh;
+  filter: drop-shadow(5px 5px 5px #222);
+  border-radius: 5px;
+}
+
+.img:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#img1 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d7/CapAmerica-EndgameProfile.jpg/revision/latest?cb=20190423175339");
+  background-size: cover;
+  background-position: center;
+}
+
+#img2 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/3/35/IronMan-EndgameProfile.jpg/revision/latest?cb=20190423175213");
+  background-size: cover;
+  background-position: center;
+}
+
+#img3 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/99/Black_Panther_AIW_Profile.jpg/revision/latest?cb=20180518212436");
+  background-size: cover;
+  background-position: center;
+}
+
+#img4 {
+  background-image: url("https://cutewallpaper.org/21/tom-holland-desktop-wallpaper/Download-640x960-Avengers-Infinity-War,-Spider-man,-Tom-.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#img5 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d9/Doctor_Strange_AIW_Profile.jpg/revision/latest?cb=20180518212354");
+  background-size: cover;
+  background-position: center;
+}
+
+#img6 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/4/41/Winter_Soldier_AIW_Profile.jpg/revision/latest/scale-to-width-down/310?cb=20180525203553");
+  background-size: cover;
+  background-position: center;
+}
+
+#img7 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelmovies/images/d/d1/Scarlet_Witch_InfinityWar_poster.jpg/revision/latest?cb=20180404210611");
+  background-size: cover;
+  background-position: center;
+}
+
+#img8 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/99/Black_Panther_AIW_Profile.jpg/revision/latest?cb=20180518212436");
+  background-size: cover;
+  background-position: center;
+}
+
+#img9 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/96/Star-Lord_AIW_Profile.jpg/revision/latest?cb=20180518211942");
+  background-size: cover;
+  background-position: center;
+}
+
+#img10 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/6/61/Gamora_AIW_Profile.jpg/revision/latest?cb=20180518212221");
+  background-size: cover;
+  background-position: center;
+}
+
+#img11 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/f/f2/Drax_AIW_Profile.jpg/revision/latest?cb=20180518212237");
+  background-size: cover;
+  background-position: center;
+}
+
+#img12 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelmovies/images/4/4c/GOTG_Groot_Poster.jpg/revision/latest?cb=20160512212218");
+  background-size: cover;
+  background-position: center;
+}
+
+#img13 {
+  background-image: url("https://i.pinimg.com/originals/0b/e5/97/0be5972c11e43582cbad67e11f4956a7.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#img14 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/c/c7/Mantis_AIW_Profile.jpg/revision/latest?cb=20180518212335");
+  background-size: cover;
+  background-position: center;
+}
+
+#img15 {
+  background-image: url("https://media.aintitcool.com/media/uploads/2018/dannie/aiw_online_1_sheet_vision_v1_sm_large.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#img16 {
+  background-image: url("https://i.pinimg.com/564x/5c/45/ff/5c45ff00d9f5c048b0791294a4831cdf.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#img17 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/e/e9/Textless_AMATW_Character_Posters_02.jpg/revision/latest?cb=20180731232106");
+  background-size: cover;
+  background-position: center;
+}
+
+#img18 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d7/Textless_AMATW_Character_Posters_03.jpg/revision/latest?cb=20180731232107");
+  background-size: cover;
+  background-position: center;
+}
+
+#img19 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/1b/Textless_AMATW_Character_Posters_04.jpg/revision/latest?cb=20180731232237");
+  background-size: cover;
+  background-position: center;
+}
+
+#img20 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/f/fd/Shuri_AIW_Profile.jpg/revision/latest?cb=20180518212643");
+  background-size: cover;
+  background-position: center;
+}
+#img21 {
+  background-image: url("https://i.etsystatic.com/15963200/r/il/ceef76/1730782907/il_794xN.1730782907_kkk9.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#img22 {
+  background-image: url("https://wallpapercave.com/wp/wp4304502.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#img23 {
+  background-image: url("https://www.itl.cat/pngfile/big/30-308715_hulk-in-avengers-infinity-war-wallpaper-hulk-infinity.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#img24 {
+  background-image: url("https://images.hdqwalls.com/download/war-machine-in-avengers-infinity-war-new-poster-ke-1242x2688.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#img25 {
+  background-image: url("https://images.wallpapersden.com/image/download/rocket-raccoon-in-avengers-endgame_64436_2932x2932.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#img26 {
+  background-image: url("https://i.pinimg.com/originals/1d/ca/6b/1dca6b60f08a7e18869065360fdfc911.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#img27 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/0/05/Nebula-EndgameProfile.jpg/revision/latest?cb=20190423175315");
+  background-size: cover;
+  background-position: center;
+}
+
+#img28 {
+  background-image: url("https://i.pinimg.com/originals/ed/d7/4d/edd74d6b6e7c392b73185c760e497e2e.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#img29 {
+  background-image: url("https://i.pinimg.com/originals/25/41/85/2541850c76579f9edb80d066bd73a568.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#img30 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/f/fe/CapMarvel-EndgameProfile.jpeg/revision/latest?cb=20190423175247");
+  background-size: cover;
+  background-position: center;
+}
+
+#img31 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d5/Wong_AIW_Profile.jpg/revision/latest?cb=20180518212810");
+  background-size: cover;
+  background-position: center;
+}
+
+#img32 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/2/29/Thor_Ragnarok_Textless_Character_Posters_05.jpg/revision/latest?cb=20170918170714");
+  background-size: cover;
+  background-position: center;
+}
+
+#img33 {
+  background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/loki-1556801363.jpeg?crop=0.528xw:0.997xh;0.377xw,0.00330xh&resize=480:*");
+  background-size: cover;
+  background-position: center;
+}
+
+#img34 {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/7/7f/Thor_Ragnarok_Textless_Character_Posters_07.jpg/revision/latest?cb=20170918170716");
+  background-size: cover;
+  background-position: center;
+}
+
+#img35 {
+  background-image: url("https://marveltoynews.com/wp-content/uploads/2018/04/Infinity-War-Hot-Toys-Thanos-Figure-with-Infinity-Gauntlet-Sixth-Scale.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#img36 {
+  background-image: url("https://vignette.wikia.nocookie.net/disney/images/e/ed/Yondu_Textless_GOTG_Poster.jpg/revision/latest?cb=20160512210134");
+  background-size: cover;
+  background-position: center;
+}
