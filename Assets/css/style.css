@@ -1,0 +1,63 @@
+
+ body{
+    background:url("https://wallpaperstream.com/wallpapers/thumbnails/avengers/Avengers-3D-Logo_thumb2x.jpg") no-repeat;
+     background-size:cover;
+}
+.landing {
+    margin: 8vh auto;
+    justify-content: center;
+    text-align: center;
+    padding: 9vh;
+    height: 86vh;
+    background: #000000a4;
+}
+    .pulse{
+    background: rgb(216, 161, 161);
+    border-radius: 15px;
+    width:13vh;
+    height:5vh;
+  }
+  
+  .text-head{
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 0 20px #ff005b;
+    font-size: 5vh;
+  }
+  
+  .landing p {
+    padding: 10vh 14vh;
+    font-family: "Courgette", "cursive";
+    color: rgb(255, 255, 255);
+    font-size: 3vh;
+    margin-bottom: 5vh;
+}
+
+  #Button{
+    color: rgba(255, 255, 255, 0.95);
+    background-color:#000;
+    box-shadow: 0 0 20px #ff005b;
+    font-size:3vh;
+  }
+
+  .landing h1{
+      text-transform: uppercase;
+      margin-bottom: 4vh;
+  }
+  .text-head:after{
+    content:attr(text-head);
+    z-index: -1;
+    position:absolute;
+    color: #ff005b;
+    filter:blur(15px)
+  }
+  
+  .text-head:before{
+    content:"";
+    position:absolute;
+    background:#fe30fe;
+    z-index: -2;
+    opacity: 0.5;
+    filter: blur(40px);
+  }
+  
+  

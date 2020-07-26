@@ -1,10 +1,16 @@
 disintegrate.init()
 
+var score=0;
+
+var doc = document.getElementById("score");
+
 document.getElementById('img8').addEventListener('click', e => {
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-   e.target.remove()
+   e.target.remove();
+   score++;
+ doc.innerHTML = score;
   }, 650)
 })
 
@@ -13,6 +19,8 @@ document.getElementById('img4').addEventListener('click', e => {
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
    e.target.remove()
+   score++;
+ doc.innerHTML = score;
   }, 650)
 })
 
@@ -21,6 +29,8 @@ document.getElementById('img3').addEventListener('click', e => {
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
    e.target.remove()
+   score++;
+ doc.innerHTML = score;
   }, 650)
 })
 
@@ -28,14 +38,16 @@ document.getElementById('img5').addEventListener('click', e => {
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-   e.target.remove()
+    e.target.remove() ; 
   }, 650)
 })
 document.getElementById('img6').addEventListener('click', e => {
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-   e.target.remove()
+    e.target.remove() ; score++;
+ doc.innerHTML = score;
+  
   }, 650)
 })
 
@@ -43,7 +55,9 @@ document.getElementById('img7').addEventListener('click', e => {
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-   e.target.remove()
+    e.target.remove() ; score++;
+ doc.innerHTML = score;
+  
   }, 650)
 })
 
@@ -51,7 +65,9 @@ document.getElementById('img9').addEventListener('click', e => {
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-   e.target.remove()
+    e.target.remove() ; score++;
+ doc.innerHTML = score;
+  
   }, 650)
 })
 
@@ -59,7 +75,9 @@ document.getElementById('img11').addEventListener('click', e => {
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-   e.target.remove()
+    e.target.remove() ; score++;
+ doc.innerHTML = score;
+  
   }, 650)
 })
 
@@ -67,7 +85,9 @@ document.getElementById('img12').addEventListener('click', e => {
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-   e.target.remove()
+    e.target.remove() ; score++;
+ doc.innerHTML = score;
+  
   }, 650)
 })
 
@@ -75,7 +95,9 @@ document.getElementById('img14').addEventListener('click', e => {
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-   e.target.remove()
+    e.target.remove() ; score++;
+ doc.innerHTML = score;
+  
   }, 650)
 })
 
@@ -83,44 +105,63 @@ document.getElementById('img13').addEventListener('click', e => {
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-   e.target.remove()
+    e.target.remove() ; score++;
+ doc.innerHTML = score;
+  
   }, 650)
 })
 document.getElementById('img16').addEventListener('click', e => {
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-   e.target.remove()
+    e.target.remove() ; score++;
+ doc.innerHTML = score;
+  
   }, 650)
 })
 document.getElementById('img17').addEventListener('click', e => {
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-   e.target.remove()
+    e.target.remove() ; score++;
+ doc.innerHTML = score;
+  
   }, 650)
 })
 document.getElementById('img18').addEventListener('click', e => {
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-   e.target.remove()
+    e.target.remove() ; score++;
+ doc.innerHTML = score;
+  
   }, 650)
 })
 document.getElementById('img19').addEventListener('click', e => {
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-   e.target.remove()
+    e.target.remove() ; score++;
+ doc.innerHTML = score;
+  
   }, 650)
 })
 document.getElementById('img20').addEventListener('click', e => {
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-   e.target.remove()
+    e.target.remove() ; score++;
+ doc.innerHTML = score;
+  
   }, 650)
 })
+
+$(".no").click(function(){
+  alert("hi")
+  score = 0;
+});
+
+
 
 const thanosSnap = function() {
   this.name = 'ThanosSnap'
