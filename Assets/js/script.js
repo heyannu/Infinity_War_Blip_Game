@@ -157,9 +157,11 @@ document.getElementById('img20').addEventListener('click', e => {
 })
 
 $(".no").click(function(){
-  alert("hi")
-  score = 0;
+  // document.getElementById('text-score').innerHTML=score;
+  console.log(document.getElementById('text-score'))
+  location.replace("https://blipped-out.netlify.app/Routes/score.html")
 });
+
 
 
 

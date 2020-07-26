@@ -1,6 +1,5 @@
-var btn = document.getElementsByClassName("btn");
+document.getElementById('Button').addEventListener('click', function(){
+    location.replace("https://blipped-out.netlify.app/Routes/landing.html")
+})
 
-$(btn).click(function(){
-  alert("hi")
-  console.log("hi")
-});
+
