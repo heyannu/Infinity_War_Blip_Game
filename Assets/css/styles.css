@@ -248,3 +248,47 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+@media screen and (max-width:768px){
+  .flex-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding:0;
+    margin:7vh 7vh 7vh 9vh;
+  }
+
+}
+
+@media screen and (max-width:600px){
+  .flex-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding:0;
+    margin:7vh 7vh 7vh 9vh;
+  }
+  .jumbotron {
+    width:169vw;
+    padding: 0.2rem 0.2rem;
+    margin-bottom: 2rem;
+    color: rgba(255,255,255,0.5);
+    background-color: rgba(0,0,0,0.7);
+    border-radius: .3rem;
+  }
+}
+@media screen and (max-width:450px){
+  .flex-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding:0;
+    margin:7vh 7vh 7vh 9vh;
+  }
+  .jumbotron {
+    width:169vw;
+    padding: 0.2rem 0.2rem;
+    margin-bottom: 2rem;
+    color: rgba(255,255,255,0.5);
+    background-color: rgba(0,0,0,0.7);
+    border-radius: .3rem;
+  }
+}
+

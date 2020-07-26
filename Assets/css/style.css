@@ -30,7 +30,7 @@
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 12px #fff;
     font-size: 3vh;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
 }
 
   #Button{
@@ -59,6 +59,61 @@
     z-index: -2;
     opacity: 0.5;
     filter: blur(40px);
+  }
+  
+  
+  @media screen and (max-width:768px){
+    
+    
+ body{
+  background:url("https://wallpaperstream.com/wallpapers/thumbnails/avengers/Avengers-3D-Logo_thumb2x.jpg") no-repeat;
+   /* background-size:cover; */
+   background-size: auto;
+}
+    .landing h1{
+      text-transform: uppercase;
+      margin-bottom: 4.5vh;
+  }
+
+      .landing p {
+        padding: 7vh 0vh;
+        font-family: "Courgette", "cursive";
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 12px #fff;
+        font-size: 3vh;
+        margin-bottom: 5vh;
+      }
+  
+  }
+  @media screen and (max-width:600px){
+    .landing h1{
+      text-transform: uppercase;
+      margin-bottom: 4vh;
+  }
+
+      .landing p {
+        padding: 7vh 0vh;
+        font-family: "Courgette", "cursive";
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 12px #fff;
+        font-size: 2.5vh;
+        margin-bottom: 5vh;
+      }
+  }
+  @media screen and (max-width:450px){
+    .landing h1{
+      text-transform: uppercase;
+      margin-bottom: 2.5vh;
+  }
+
+    .landing p {
+      padding: 7vh 0vh;
+      font-family: "Courgette", "cursive";
+      color: rgb(255, 255, 255);
+      text-shadow: 2px 2px 12px #fff;
+      font-size: 2vh;
+      margin-bottom: 5vh;
+  }
   }
   
   
