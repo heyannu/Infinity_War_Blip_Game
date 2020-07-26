@@ -195,6 +195,10 @@ $(".no").click(function(){
   else if(score==15){
     msg="Thank you for being this awesome! Let's binge watch the whole MCU series together, it would be fun"
   }
+  else if(score>15){
+    score = Math.floor(score/2);
+    msg="Infinity War was an amazing movie, wasn't it?"
+  }
   
   swal({
     title: ("Your score is "+score),
