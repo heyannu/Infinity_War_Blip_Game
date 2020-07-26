@@ -1,11 +1,41 @@
 disintegrate.init()
 
+var triv = [
+  "In the main Marvel comics canon, before Groot was made an honorary member of the Guardians of the Galaxy, he was actually a villain.He was originally an extraterrestrial being who came down to Earth to capture and experiment upon humans.",
+  "Steve Rodgers (Captain America) has a list in his notebook of cultural events/items that he needs to brush up on to acquaint himself with 21st century. The list change depending on the country where the film was shown. Check out how some of the cultural touchstones vary from place to place in the image below.",
+  "When Tony Stark looks through his father Howard’s suitcase in Iron Man 2, you can see a Captain America comic book… as well as a map of the Arctic Circle where Captain America’s plane went down.",
+  "In Iron Man 2, when Nick Fury tells Tony Stark that they have bigger problems to worry about in the Southwest, he’s referring to the recent discovery of Thor’s hammer.",
+  "The New Mexico town where the first Thor movie was set is named Puente Antiguo, which means “ancient bridge” in Spanish. This is very likely a reference to the Bifrost Bridge, Thor’s connection to Asgard.",
+  "The shirt that Dr. Jane Foster (Natalie Portman) hands to Thor belonged to an ex-boyfriend named Donald Blake M.D. In the original comic books, Dr. Blake was Thor’s alter-ego.",
+  "When Thor abducts Loki in The Avengers, two ravens fly by during their argument. These ravens are thought to be Huginn and Muninn, who serve as agents of Odin in the Thor comic books.",
+  "In The Avengers, after Bruce Banner falls from the sky, the security guard (played by Harry Dean Stanton) asks him nervously if he’s an alien. Which, given the circumstances, is a fair question. But it makes even more sense when you know the full context: Harry Dean Stanton played one of the crew members on the ship in Alien that was killed by the Alien.",
+ "J.A.R.V.I.S., the name of Iron Man’s AI assistant is an acronym for- Just a Rather Very Intelligent System.",
+ "While Tony Stark is rich, he’s not the richest superhero. That honor goes to Black Panther, who is worth five times as much as Stark.",
+ "Although he was one of the founding members of The Avengers, Hulk actually left the group shortly after their first battle (against Loki) in the comics, because he realized that his teammates were afraid of him. He stayed away for fifty years before finally returning."
+];
+
 $('.score').hide();
 var score=0;
+function check(){
+  if(score==14){
+    var x = Math.floor((Math.random() * 10) + 1);
+    trivia = triv[x];
+    swal({
+      title: ("Your score is "+score),
+      text: "Infinity War was an amazing movie, wasn't it?"+'\n \n'+"General Trivia"+"\n \n"+trivia,
+      icon: "success",
+     
+    }).then(()=>{
+      location.reload();
+    });
+  }
+}
+
 
 var doc = document.getElementById("score");
 
 document.getElementById('img8').addEventListener('click', e => {
+  check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
@@ -16,6 +46,7 @@ document.getElementById('img8').addEventListener('click', e => {
 })
 
 document.getElementById('img4').addEventListener('click', e => {
+  check()
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
@@ -25,7 +56,8 @@ document.getElementById('img4').addEventListener('click', e => {
   }, 650)
 })
 
-document.getElementById('img3').addEventListener('click', e => {
+document.getElementById('img3').addEventListener('click', e => { 
+  check()
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
@@ -35,14 +67,14 @@ document.getElementById('img3').addEventListener('click', e => {
   }, 650)
 })
 
-document.getElementById('img5').addEventListener('click', e => {
+document.getElementById('img5').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
     e.target.remove() ; 
   }, 650)
 })
-document.getElementById('img6').addEventListener('click', e => {
+document.getElementById('img6').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
@@ -52,7 +84,7 @@ document.getElementById('img6').addEventListener('click', e => {
   }, 650)
 })
 
-document.getElementById('img7').addEventListener('click', e => {
+document.getElementById('img7').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
@@ -62,7 +94,7 @@ document.getElementById('img7').addEventListener('click', e => {
   }, 650)
 })
 
-document.getElementById('img9').addEventListener('click', e => {
+document.getElementById('img9').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
@@ -72,7 +104,7 @@ document.getElementById('img9').addEventListener('click', e => {
   }, 650)
 })
 
-document.getElementById('img11').addEventListener('click', e => {
+document.getElementById('img11').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
@@ -82,7 +114,7 @@ document.getElementById('img11').addEventListener('click', e => {
   }, 650)
 })
 
-document.getElementById('img12').addEventListener('click', e => {
+document.getElementById('img12').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
@@ -92,7 +124,7 @@ document.getElementById('img12').addEventListener('click', e => {
   }, 650)
 })
 
-document.getElementById('img14').addEventListener('click', e => {
+document.getElementById('img14').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
@@ -102,7 +134,7 @@ document.getElementById('img14').addEventListener('click', e => {
   }, 650)
 })
 
-document.getElementById('img13').addEventListener('click', e => {
+document.getElementById('img13').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
@@ -111,7 +143,7 @@ document.getElementById('img13').addEventListener('click', e => {
   
   }, 650)
 })
-document.getElementById('img16').addEventListener('click', e => {
+document.getElementById('img16').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
@@ -120,7 +152,7 @@ document.getElementById('img16').addEventListener('click', e => {
   
   }, 650)
 })
-document.getElementById('img17').addEventListener('click', e => {
+document.getElementById('img17').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
@@ -129,7 +161,7 @@ document.getElementById('img17').addEventListener('click', e => {
   
   }, 650)
 })
-document.getElementById('img18').addEventListener('click', e => {
+document.getElementById('img18').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
@@ -138,7 +170,7 @@ document.getElementById('img18').addEventListener('click', e => {
   
   }, 650)
 })
-document.getElementById('img19').addEventListener('click', e => {
+document.getElementById('img19').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
@@ -147,7 +179,7 @@ document.getElementById('img19').addEventListener('click', e => {
   
   }, 650)
 })
-document.getElementById('img20').addEventListener('click', e => {
+document.getElementById('img20').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
@@ -161,20 +193,6 @@ document.getElementById('img20').addEventListener('click', e => {
 
 $(".no").click(function(){
   var msg="oops";
-  var triv = [
-    "In the main Marvel comics canon, before Groot was made an honorary member of the Guardians of the Galaxy, he was actually a villain.He was originally an extraterrestrial being who came down to Earth to capture and experiment upon humans.",
-    "Steve Rodgers (Captain America) has a list in his notebook of cultural events/items that he needs to brush up on to acquaint himself with 21st century. The list change depending on the country where the film was shown. Check out how some of the cultural touchstones vary from place to place in the image below.",
-    "When Tony Stark looks through his father Howard’s suitcase in Iron Man 2, you can see a Captain America comic book… as well as a map of the Arctic Circle where Captain America’s plane went down.",
-    "In Iron Man 2, when Nick Fury tells Tony Stark that they have bigger problems to worry about in the Southwest, he’s referring to the recent discovery of Thor’s hammer.",
-    "The New Mexico town where the first Thor movie was set is named Puente Antiguo, which means “ancient bridge” in Spanish. This is very likely a reference to the Bifrost Bridge, Thor’s connection to Asgard.",
-    "The shirt that Dr. Jane Foster (Natalie Portman) hands to Thor belonged to an ex-boyfriend named Donald Blake M.D. In the original comic books, Dr. Blake was Thor’s alter-ego.",
-    "When Thor abducts Loki in The Avengers, two ravens fly by during their argument. These ravens are thought to be Huginn and Muninn, who serve as agents of Odin in the Thor comic books.",
-    "In The Avengers, after Bruce Banner falls from the sky, the security guard (played by Harry Dean Stanton) asks him nervously if he’s an alien. Which, given the circumstances, is a fair question. But it makes even more sense when you know the full context: Harry Dean Stanton played one of the crew members on the ship in Alien that was killed by the Alien.",
-   "J.A.R.V.I.S., the name of Iron Man’s AI assistant is an acronym for- Just a Rather Very Intelligent System.",
-   "While Tony Stark is rich, he’s not the richest superhero. That honor goes to Black Panther, who is worth five times as much as Stark.",
-   "Although he was one of the founding members of The Avengers, Hulk actually left the group shortly after their first battle (against Loki) in the comics, because he realized that his teammates were afraid of him. He stayed away for fifty years before finally returning."
-  ];
-
   var x = Math.floor((Math.random() * 10) + 1);
   trivia = triv[x];
   if(score>= 0 && score<=3){
