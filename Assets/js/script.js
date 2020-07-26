@@ -21,7 +21,7 @@ function check(){
     var x = Math.floor((Math.random() * 10) + 1);
     trivia = triv[x];
     swal({
-      title: ("Your score is "+score),
+      title: ("Your score is "+(score+1)),
       text: "Infinity War was an amazing movie, wasn't it?"+'\n \n'+"General Trivia"+"\n \n"+trivia,
       icon: "success",
      
