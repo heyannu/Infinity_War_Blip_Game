@@ -1,6 +1,5 @@
 disintegrate.init()
 
-
 $.fn.shuffleChildren = function() {
   $.each(this.get(), function(index, el) {
     var $el = $(el);
@@ -13,7 +12,7 @@ $.fn.shuffleChildren = function() {
     $el.empty();
     $find.appendTo($el);
   });
-};
+}
 
 
 var triv = [
@@ -42,8 +41,10 @@ function check(){
       icon: "success",
      
     }).then(()=>{
-      $(".flex-container").shuffleChildren();
-      console.log('shuffled');   
+      // location.reload();
+      location.reload()
+      // $(".flex-container").shuffleChildren();
+
     });
   }
 }
@@ -243,12 +244,9 @@ $(".no").click(function(){
     icon: "success",
    
   }).then(()=>{
-    // location.reload().then(()=>{
-      
-      $(".flex-container").shuffleChildren();
-      console.log('shuffled');
-    // location.reload()
-  });
+    location.reload();
+      // $(".flex-container").shuffleChildren();
+    });
 }
 );
 
