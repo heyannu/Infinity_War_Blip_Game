@@ -1,5 +1,21 @@
 disintegrate.init()
 
+
+$.fn.shuffleChildren = function() {
+  $.each(this.get(), function(index, el) {
+    var $el = $(el);
+    var $find = $el.children();
+
+    $find.sort(function() {
+      return 0.5 - Math.random();
+    });
+
+    $el.empty();
+    $find.appendTo($el);
+  });
+};
+
+
 var triv = [
   "In the main Marvel comics canon, before Groot was made an honorary member of the Guardians of the Galaxy, he was actually a villain.He was originally an extraterrestrial being who came down to Earth to capture and experiment upon humans.",
   "Steve Rodgers (Captain America) has a list in his notebook of cultural events/items that he needs to brush up on to acquaint himself with 21st century. The list change depending on the country where the film was shown. Check out how some of the cultural touchstones vary from place to place in the image below.",
@@ -17,7 +33,7 @@ var triv = [
 $('.score').hide();
 var score=0;
 function check(){
-  if(score==14){
+  if(score==15){
     var x = Math.floor((Math.random() * 10) + 1);
     trivia = triv[x];
     swal({
@@ -26,7 +42,8 @@ function check(){
       icon: "success",
      
     }).then(()=>{
-      location.reload();
+      $(".flex-container").shuffleChildren();
+      console.log('shuffled');   
     });
   }
 }
@@ -50,9 +67,9 @@ document.getElementById('img4').addEventListener('click', e => {
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-   e.target.remove()
-   score++;
+      score++;
  doc.innerHTML = score;
+ e.target.remove()
   }, 650)
 })
 
@@ -61,9 +78,9 @@ document.getElementById('img3').addEventListener('click', e => {
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-   e.target.remove()
-   score++;
+      score++;
  doc.innerHTML = score;
+ e.target.remove()
   }, 650)
 })
 
@@ -71,6 +88,8 @@ document.getElementById('img5').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
+    score++;
+    doc.innerHTML = score;
     e.target.remove() ; 
   }, 650)
 })
@@ -78,8 +97,8 @@ document.getElementById('img6').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-    e.target.remove() ; score++;
- doc.innerHTML = score;
+      score++;
+ doc.innerHTML = score;e.target.remove()
   
   }, 650)
 })
@@ -88,8 +107,8 @@ document.getElementById('img7').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-    e.target.remove() ; score++;
- doc.innerHTML = score;
+      score++;
+ doc.innerHTML = score;e.target.remove()
   
   }, 650)
 })
@@ -98,8 +117,8 @@ document.getElementById('img9').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-    e.target.remove() ; score++;
- doc.innerHTML = score;
+      score++;
+ doc.innerHTML = score;e.target.remove()
   
   }, 650)
 })
@@ -108,8 +127,8 @@ document.getElementById('img11').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-    e.target.remove() ; score++;
- doc.innerHTML = score;
+      score++;
+ doc.innerHTML = score;e.target.remove()
   
   }, 650)
 })
@@ -118,8 +137,8 @@ document.getElementById('img12').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-    e.target.remove() ; score++;
- doc.innerHTML = score;
+      score++;
+ doc.innerHTML = score;e.target.remove()
   
   }, 650)
 })
@@ -128,8 +147,8 @@ document.getElementById('img14').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-    e.target.remove() ; score++;
- doc.innerHTML = score;
+      score++;
+ doc.innerHTML = score;e.target.remove()
   
   }, 650)
 })
@@ -138,8 +157,8 @@ document.getElementById('img13').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-    e.target.remove() ; score++;
- doc.innerHTML = score;
+      score++;
+ doc.innerHTML = score;e.target.remove()
   
   }, 650)
 })
@@ -147,8 +166,8 @@ document.getElementById('img16').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-    e.target.remove() ; score++;
- doc.innerHTML = score;
+      score++;
+ doc.innerHTML = score;e.target.remove()
   
   }, 650)
 })
@@ -156,8 +175,8 @@ document.getElementById('img17').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-    e.target.remove() ; score++;
- doc.innerHTML = score;
+      score++;
+ doc.innerHTML = score;e.target.remove()
   
   }, 650)
 })
@@ -165,8 +184,8 @@ document.getElementById('img18').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-    e.target.remove() ; score++;
- doc.innerHTML = score;
+      score++;
+ doc.innerHTML = score;e.target.remove()
   
   }, 650)
 })
@@ -174,8 +193,8 @@ document.getElementById('img19').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-    e.target.remove() ; score++;
- doc.innerHTML = score;
+      score++;
+ doc.innerHTML = score;e.target.remove()
   
   }, 650)
 })
@@ -183,8 +202,8 @@ document.getElementById('img20').addEventListener('click', e => { check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
   setTimeout(()=>{
-    e.target.remove() ; score++;
- doc.innerHTML = score;
+      score++;
+ doc.innerHTML = score;e.target.remove()
   
   }, 650)
 })
@@ -205,15 +224,15 @@ $(".no").click(function(){
     msg="Not Bad, but this movie quiz deserves a better score, Don't you think?"
   }
   else if(score > 9 && score <=12){
-    msg="Great! You must score a 15 next time"
+    msg="Great! You must score a 16 next time"
   }
-  else if(score> 12 && score <15 ){
+  else if(score> 12 && score <=15 ){
     msg="Awesomeee! Even though the score is amazing, let's watch infinity war again";
   }
-  else if(score==15){
+  else if(score==16){
     msg="Thank you for being this awesome! Let's binge watch the whole MCU series together, it would be fun"
   }
-  else if(score>15){
+  else if(score>16){
     score = Math.floor(score/2);
     msg="Infinity War was an amazing movie, wasn't it?"
   }
@@ -224,7 +243,11 @@ $(".no").click(function(){
     icon: "success",
    
   }).then(()=>{
-    location.reload();
+    // location.reload().then(()=>{
+      
+      $(".flex-container").shuffleChildren();
+      console.log('shuffled');
+    // location.reload()
   });
 }
 );
