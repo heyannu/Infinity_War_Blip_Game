@@ -1,11 +1,11 @@
 disintegrate.init()
 
-$.fn.shuffleChildren = function() {
-  $.each(this.get(), function(index, el) {
+$.fn.shuffleChildren = function () {
+  $.each(this.get(), function (index, el) {
     var $el = $(el);
     var $find = $el.children();
 
-    $find.sort(function() {
+    $find.sort(function () {
       return 0.5 - Math.random();
     });
 
@@ -24,27 +24,23 @@ var triv = [
   "The shirt that Dr. Jane Foster (Natalie Portman) hands to Thor belonged to an ex-boyfriend named Donald Blake M.D. In the original comic books, Dr. Blake was Thor’s alter-ego.",
   "When Thor abducts Loki in The Avengers, two ravens fly by during their argument. These ravens are thought to be Huginn and Muninn, who serve as agents of Odin in the Thor comic books.",
   "In The Avengers, after Bruce Banner falls from the sky, the security guard (played by Harry Dean Stanton) asks him nervously if he’s an alien. Which, given the circumstances, is a fair question. But it makes even more sense when you know the full context: Harry Dean Stanton played one of the crew members on the ship in Alien that was killed by the Alien.",
- "J.A.R.V.I.S., the name of Iron Man’s AI assistant is an acronym for- Just a Rather Very Intelligent System.",
- "While Tony Stark is rich, he’s not the richest superhero. That honor goes to Black Panther, who is worth five times as much as Stark.",
- "Although he was one of the founding members of The Avengers, Hulk actually left the group shortly after their first battle (against Loki) in the comics, because he realized that his teammates were afraid of him. He stayed away for fifty years before finally returning."
+  "J.A.R.V.I.S., the name of Iron Man’s AI assistant is an acronym for- Just a Rather Very Intelligent System.",
+  "While Tony Stark is rich, he’s not the richest superhero. That honor goes to Black Panther, who is worth five times as much as Stark.",
+  "Although he was one of the founding members of The Avengers, Hulk actually left the group shortly after their first battle (against Loki) in the comics, because he realized that his teammates were afraid of him. He stayed away for fifty years before finally returning."
 ];
 
 $('.score').hide();
-var score=0;
-function check(){
-  if(score==15){
+var score = 0;
+function check() {
+  if (score == 15) {
     var x = Math.floor((Math.random() * 10) + 1);
     trivia = triv[x];
     swal({
-      title: ("Your score is "+(score+1)),
-      text: "Infinity War was an amazing movie, wasn't it?"+'\n \n'+"General Trivia"+"\n \n"+trivia,
+      title: ("Your score is " + (score + 1)),
+      text: "Infinity War was an amazing movie, wasn't it?" + '\n \n' + "General Trivia" + "\n \n" + trivia,
       icon: "success",
-     
-    }).then(()=>{
-      // location.reload();
+    }).then(() => {
       location.reload()
-      // $(".flex-container").shuffleChildren();
-
     });
   }
 }
@@ -56,10 +52,10 @@ document.getElementById('img8').addEventListener('click', e => {
   check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
-  setTimeout(()=>{
-   e.target.remove();
-   score++;
- doc.innerHTML = score;
+  setTimeout(() => {
+    e.target.remove();
+    score++;
+    doc.innerHTML = score;
   }, 650)
 })
 
@@ -67,192 +63,205 @@ document.getElementById('img4').addEventListener('click', e => {
   check()
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
-  setTimeout(()=>{
-      score++;
- doc.innerHTML = score;
- e.target.remove()
+  setTimeout(() => {
+    doc.innerHTML = score;
+    e.target.remove();
+    score++;
   }, 650)
 })
 
-document.getElementById('img3').addEventListener('click', e => { 
+document.getElementById('img3').addEventListener('click', e => {
   check()
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
-  setTimeout(()=>{
-      score++;
- doc.innerHTML = score;
- e.target.remove()
-  }, 650)
-})
-
-document.getElementById('img5').addEventListener('click', e => { check();
-  const disObj = disintegrate.getDisObj(e.target)
-  disintegrate.createSimultaneousParticles(disObj)
-  setTimeout(()=>{
-    score++;
+  setTimeout(() => {
     doc.innerHTML = score;
-    e.target.remove() ; 
-  }, 650)
-})
-document.getElementById('img6').addEventListener('click', e => { check();
-  const disObj = disintegrate.getDisObj(e.target)
-  disintegrate.createSimultaneousParticles(disObj)
-  setTimeout(()=>{
-      score++;
- doc.innerHTML = score;e.target.remove()
-  
+    e.target.remove();
+    score++;
   }, 650)
 })
 
-document.getElementById('img7').addEventListener('click', e => { check();
+document.getElementById('img5').addEventListener('click', e => {
+  check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
-  setTimeout(()=>{
-      score++;
- doc.innerHTML = score;e.target.remove()
-  
+  setTimeout(() => {
+    doc.innerHTML = score;
+    e.target.remove();
+    score++;
+  }, 650)
+})
+document.getElementById('img6').addEventListener('click', e => {
+  check();
+  const disObj = disintegrate.getDisObj(e.target)
+  disintegrate.createSimultaneousParticles(disObj)
+  setTimeout(() => {
+    doc.innerHTML = score;
+    e.target.remove();
+    score++;
   }, 650)
 })
 
-document.getElementById('img9').addEventListener('click', e => { check();
+document.getElementById('img7').addEventListener('click', e => {
+  check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
-  setTimeout(()=>{
-      score++;
- doc.innerHTML = score;e.target.remove()
-  
+  setTimeout(() => {
+    doc.innerHTML = score;
+    e.target.remove();
+    score++;
   }, 650)
 })
 
-document.getElementById('img11').addEventListener('click', e => { check();
+document.getElementById('img9').addEventListener('click', e => {
+  check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
-  setTimeout(()=>{
-      score++;
- doc.innerHTML = score;e.target.remove()
-  
+  setTimeout(() => {
+    doc.innerHTML = score;
+    e.target.remove();
+    score++;
   }, 650)
 })
 
-document.getElementById('img12').addEventListener('click', e => { check();
+document.getElementById('img11').addEventListener('click', e => {
+  check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
-  setTimeout(()=>{
-      score++;
- doc.innerHTML = score;e.target.remove()
-  
+  setTimeout(() => {
+    doc.innerHTML = score;
+    e.target.remove();
+    score++;
   }, 650)
 })
 
-document.getElementById('img14').addEventListener('click', e => { check();
+document.getElementById('img12').addEventListener('click', e => {
+  check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
-  setTimeout(()=>{
-      score++;
- doc.innerHTML = score;e.target.remove()
-  
+  setTimeout(() => {
+    doc.innerHTML = score;
+    e.target.remove();
+    score++;
   }, 650)
 })
 
-document.getElementById('img13').addEventListener('click', e => { check();
+document.getElementById('img14').addEventListener('click', e => {
+  check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
-  setTimeout(()=>{
-      score++;
- doc.innerHTML = score;e.target.remove()
-  
+  setTimeout(() => {
+    doc.innerHTML = score;
+    e.target.remove()
+    score++;
   }, 650)
 })
-document.getElementById('img16').addEventListener('click', e => { check();
+
+document.getElementById('img13').addEventListener('click', e => {
+  check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
-  setTimeout(()=>{
-      score++;
- doc.innerHTML = score;e.target.remove()
-  
+  setTimeout(() => {
+    doc.innerHTML = score; 
+    e.target.remove();
+    score++;
   }, 650)
 })
-document.getElementById('img17').addEventListener('click', e => { check();
+document.getElementById('img16').addEventListener('click', e => {
+  check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
-  setTimeout(()=>{
-      score++;
- doc.innerHTML = score;e.target.remove()
-  
+  setTimeout(() => {
+    doc.innerHTML = score; 
+    e.target.remove();
+    score++;
   }, 650)
 })
-document.getElementById('img18').addEventListener('click', e => { check();
+document.getElementById('img17').addEventListener('click', e => {
+  check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
-  setTimeout(()=>{
-      score++;
- doc.innerHTML = score;e.target.remove()
-  
+  setTimeout(() => {
+    doc.innerHTML = score; 
+    e.target.remove();
+    score++;
   }, 650)
 })
-document.getElementById('img19').addEventListener('click', e => { check();
+document.getElementById('img18').addEventListener('click', e => {
+  check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
-  setTimeout(()=>{
-      score++;
- doc.innerHTML = score;e.target.remove()
-  
+  setTimeout(() => {
+    doc.innerHTML = score; 
+    e.target.remove();
+    score++;
   }, 650)
 })
-document.getElementById('img20').addEventListener('click', e => { check();
+document.getElementById('img19').addEventListener('click', e => {
+  check();
   const disObj = disintegrate.getDisObj(e.target)
   disintegrate.createSimultaneousParticles(disObj)
-  setTimeout(()=>{
-      score++;
- doc.innerHTML = score;e.target.remove()
-  
+  setTimeout(() => {
+    doc.innerHTML = score; 
+    e.target.remove();
+    score++;
+  }, 650)
+})
+document.getElementById('img20').addEventListener('click', e => {
+  check();
+  const disObj = disintegrate.getDisObj(e.target)
+  disintegrate.createSimultaneousParticles(disObj)
+  setTimeout(() => {
+    doc.innerHTML = score; 
+    e.target.remove();
+    score++;
   }, 650)
 })
 
 
 
-$(".no").click(function(){
-  var msg="oops";
+$(".no").click(function () {
+  var msg = "oops";
   var x = Math.floor((Math.random() * 10) + 1);
   trivia = triv[x];
-  if(score>= 0 && score<=3){
-    msg="Whaaaaaat? Please watch infinity war again. The score is dissapointing :("
+  if (score >= 0 && score <= 3) {
+    msg = "Whaaaaaat? Please watch infinity war again. The score is dissapointing :("
   }
-  else if(score > 3 && score<=6){
-    msg="You really need to watch Infinity War again & this time pay more attention!"
+  else if (score > 3 && score <= 6) {
+    msg = "You really need to watch Infinity War again & this time pay more attention!"
   }
-  else if(score > 6 && score <=9){
-    msg="Not Bad, but this movie quiz deserves a better score, Don't you think?"
+  else if (score > 6 && score <= 9) {
+    msg = "Not Bad, but this movie quiz deserves a better score, Don't you think?"
   }
-  else if(score > 9 && score <=12){
-    msg="Great! You must score a 16 next time"
+  else if (score > 9 && score <= 12) {
+    msg = "Great! You must score a 16 next time"
   }
-  else if(score> 12 && score <=15 ){
-    msg="Awesomeee! Even though the score is amazing, let's watch infinity war again";
+  else if (score > 12 && score <= 15) {
+    msg = "Awesomeee! Even though the score is amazing, let's watch infinity war again";
   }
-  else if(score==16){
-    msg="Thank you for being this awesome! Let's binge watch the whole MCU series together, it would be fun"
+  else if (score == 16) {
+    msg = "Thank you for being this awesome! Let's binge watch the whole MCU series together, it would be fun"
   }
-  else if(score>16){
-    score = Math.floor(score/2);
-    msg="Infinity War was an amazing movie, wasn't it?"
+  else if (score > 16) {
+    score = Math.floor(score / 2);
+    msg = "Infinity War was an amazing movie, wasn't it?"
   }
-  
+
   swal({
-    title: ("Your score is "+score),
-    text: msg+'\n \n'+"General Trivia"+"\n \n"+trivia,
+    title: ("Your score is " + score),
+    text: msg + '\n \n' + "General Trivia" + "\n \n" + trivia,
     icon: "success",
-   
-  }).then(()=>{
+
+  }).then(() => {
     location.reload();
-      // $(".flex-container").shuffleChildren();
-    });
+    // $(".flex-container").shuffleChildren();
+  });
 }
 );
 
 
 
-const thanosSnap = function() {
+const thanosSnap = function () {
   this.name = 'ThanosSnap'
   this.animationDuration = 1500
   this.size = 3
